@@ -1,4 +1,4 @@
 # MyRepository
 My first repository
 
-This is what I've edited. 
+This is my first project in Front-end.
