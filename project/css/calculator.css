@@ -1,0 +1,103 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: #eee9d9;
+}
+
+
+button {
+	font-family: Arial, sans-serif;
+	font-size: 150%;
+	font-weight: bold;
+	color: #4d0000;
+	width: 70px;
+	height: 40px;
+	border-radius: 10px;
+	background: linear-gradient(#FAF0E6, #fff0b3);
+	margin: 2px;
+}
+
+button#zero {
+	margin-left: 7px;
+	margin-top: 12px;
+	float: left;
+}
+
+button#clear {
+	margin: 3px 4px 2px 6px;
+}
+
+input.result {
+	background-color: #FAF0E6;
+	text-align: right;
+}
+
+.result {
+	font-size: 130%;
+	font-weight: bold;
+	width: 315px;
+	height: 35px;
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.row {
+	margin: 10px;
+}
+
+div#row1 {
+	float: left;
+}
+
+div#row2 {
+	float: left;
+}
+
+div#row3 {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+div.point {
+	float: left;	
+}
+
+.lastRow {
+	display: inline-block !important;
+	margin: 3px 6px 3px 10px;
+}
+
+.operators {
+	margin: 10px;
+	display: inline-block;
+}
+
+
+.container {
+	width: 335px;
+	height: auto;
+	
+	margin: 100px auto !important;
+	padding: 20px 20px 9px !important;
+	
+	background: linear-gradient(#ff6666, #ffa64d);
+	border-radius: 3px;
+	box-shadow: 4px 4px #cc0000, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	margin: 60px;
+	padding: 10px;
+	color: #cc0000;
+}
+
+
+@media screen and (max-width: 450px) {
+	.container {
+		width: 90%;
+	}
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Creating a Responsive Web Design</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/contactus.css">
+		<script language="javascript" src='js/jquery-1.12.0.min.js' type='text/javascript'></script>
+		<script language="javascript" src="js/mobileMenu.js" type='text/javascript'></script>
+		<script src='js/contact_us/settings.js'></script>
+		<script src='js/contact_us/languages.js'></script>
+		<script src='js/contact_us/component.js'></script>
+		<script src='js/contact_us/form.js'></script>
+		<script src='js/contact_us/countdown.js'></script>
+		<script language="javascript" src='js/contact_us/contactus.js' type='text/javascript'></script>
+	</head>
+	<body>
+		<div id="page">
+			<header>
+				<a href="http://codifydesign.com" title="Everyday Things" class="logo"><span>Everyday Things</span></a>
+				<div class="hero">
+					<h1>Add interest with natural textures</h1> 
+					<a class="btn" title="Get advice from top designers" href="#">Get advice <span>from top designers</span></a>
+				</div>
+			</header>
+	
+
+
+	<section class="contact">
+		<div class='contact_form'>
+			<span class='form_langs form_ru'>ru</span> | <span class='form_langs form_ua'>ua</span> | <span class='form_langs form_en'>en</span>
+			<h3>Send us your Feedback</h3>
+				<form action='?' method='GET' id='form'>
+					
+					<div class='error_form_message'></div>
+					
+					<label class='label_first_name'>First Name</label> <input type="text" id='firstName' class='textfield' placeholder="Enter First Name"><br>
+					<label class='label_last_name'>Last Name</label> <input type="text" id='lastName' class='textfield' placeholder="Enter Last Name"><br>
+					<label class='email_label'>Email</label> <input type="text" class='textfield' id='email' placeholder="Enter Your Email"><br>
+					<label class='phone_label'>Phone</label> <input type="text" class='textfield' id='phone' placeholder="Enter Your Phone Number"><br>
+					<label class='contact_label'>How can we contact you?</label> <br>
+					<label class='by_phone_label'>By phone</label> <input type="radio" class='howToContact' name='1' value='phone'><br>
+					<label class='by_email_label'>By email</label> <input type="radio" class='howToContact' name='1' value='email'><br>
+					<label class='feedback_label'>Your Feedback</label> <textarea class='feedback textfield'></textarea><br>
+					<input type='submit' id='send'>
+				</form>
+			</div>
+	</section>
+		
+		<section class='countdownBtnSection'> 
+			<button value='countdown' class='countdownBtn'>Start Countdown</button>
+			<button value='countdownStop' class='countdownStopBtn'>Stop Countdown</button>
+			<div class='countdownNote'></div>
+		</section>
+		
+		<a class='mobile_menu'> </a>
+		<nav>
+			<div> 
+				<ul>
+					<li>
+						<a title="About Us" href="index.html" aria-haspopup="true">About Us</a>
+						<ul>
+							<li>
+								<a title="Sub Link 1" href="#">Sub Link 1</a>
+							</li>							
+							<li>
+								<a title="Sub Link 2" href="#">Sub Link 2</a>
+							</li>							
+							<li>
+								<a title="Sub Link 3" href="#">Sub Link 3</a>
+							</li>
+						</ul>
+					</li>					
+					<li id='design-corner'>
+						<a title="Design Corner" href="#" aria-haspopup="true">Design Corner</a>
+							<ul>
+								<li>
+									<a title="Sub Link 1" href="portfolio.html">Portfolio</a>
+								</li>							
+								<li>
+									<a title="Sub Link 2" href="#">Sub Link 2</a>
+								</li>							
+								<li>
+									<a title="Sub Link 3" href="#" aria-haspopup="true">Sub Link 3</a>
+									<ul>
+										<li>
+											<a title="Sub Sub Link 1" href="#">Sub Sub Link 1</a>
+										</li>						
+										<li>
+											<a title="Sub Sub Link 2" href="#">Sub Sub Link 2</a>
+										</li>							
+										<li>
+											<a title="Sub Sub Link 3" href="#">Sub Sub Link 3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+					</li>					
+					<li>
+						<a title="Products" href="#" aria-haspopup="true">Products</a>
+							<ul>
+								<li>
+									<a title="Sub Link 1" href="calculator.html">Calculator</a>
+								</li>							
+								<li>
+									<a title="Sub Link 2" href="#">Sub Link 2</a>
+								</li>					
+							</ul>
+					</li>
+					<li>
+						<a title="Contact Us" href="contactus.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+			<footer>
+				<div class="content">
+				&copy; Everyday Things
+					<a title="Privacy Policy" href="#">Privacy Policy</a> 
+					<a title="Terms of Service" href="#">Terms of Service</a>
+				</div>
+			</footer>
+	</body>
+		<script> 
+			var f1 = new Contact('#form');
+			var w1 = new Windoww('.countdownBtnSection');
+			var f1 = new formValidation('#form');
+		</script>
+	</html>
