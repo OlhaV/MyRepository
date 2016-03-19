@@ -36,6 +36,18 @@ a.btn:hover {
 	background-color: rgba(0,0,0,.3);
 }
 
+a.topBtn {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	color: #000;
+	text-decoration: none;
+}
+
+a.topBtn:visited {
+	color: #000;
+}
+
 /* ---------------- Header -------------------*/
 
 header {
@@ -49,10 +61,10 @@ header a.logo {
 	position: absolute;
 	display: block;
 	width: 160px;
-	height: 66px;
+	height: 59px;
 	background: url(../images/logo.svg) no-repeat 0 0;
 	background-size: contain;
-	top: 15px;
+	top: 18px;
 	left: 20px;
 }
 
@@ -71,6 +83,12 @@ header div.hero h1 {
 	line-height: 1em; 
 	margin: 0 0 30px 0;
 	color: #fff;
+}
+
+p#hosting {
+    color: #fff;
+    position: relative;
+    top: -5px;
 }
 
 /*-------------Navigation------------*/
