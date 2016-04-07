@@ -17,56 +17,33 @@
 				</div>
 			</header>
 			
-    <div class="container">
-		<div>
-            <input type="text" class="result" disabled>
+    <div id="calculator">
+        <div class='row1'>
+            <p class='clear'>C</p>
+            <div id='result'>  </div>
         </div>
-        <div class="row" id='row1'>
-            <div class="numbers">
-                <button name="one" value="1">1</button>
-                <button name="two" value="2">2</button>
-                <button name="three" value="3">3</button>
-            </div>
-        </div>
-            <p style="padding=2px;"></p>
-    <div class="row" id='row2'>
-        <div class="numbers">
-            <button name="four" value="4">4</button>
-            <button name="five" value="5">5</button>
-            <button name="six" value="6">6</button> 
-        </div>
-    </div>
-            <p style="padding=2px;"></p>
-
-        <div class="numbers" id='row3'>    
-            <button name="seven" value="7">7</button>
-            <button name="eight" value="8">8</button>
-            <button name="nine" value="9">9</button> 
-        </div>
-			<p style="padding=2px;"></p>
-		<div class="numbers">
-			<button id='zero' name="zero" value="0">0</button>
-		</div>
-	<div class='lastRow'>
-		<div class="point ">
-			<button name="point" id="point">.</button>
-		</div>
-
-		<button id="clear">C</button>
-        <button id="equals">=</button>
-	</div>
-            <div class="operators">
-				<button name="plus" id="plus" value="+">+</button>
-				<button name="minus" id="minus" value="-">-</button>
-				<button name="multiply" value="*">*</button>
-                <button name="divide" value="/">/</button>
-            </div>
-
-		<div id="backspace">		
-			<button>CE</button>
-		</div>
-			</div>
-					<a class='mobile_menu'> </a>
+        <div class='keys'>
+                <p class='number'>7</p>
+                <p class='number'>8</p>
+                <p class='number'>9</p>
+                <p class='operator'>+</p>   
+                <p class='number'>4</p>
+                <p class='number'>5</p>
+                <p class='number'>6</p>
+                <p class='operator'>-</p>  
+                <p class='number'>1</p>
+                <p class='number'>2</p>
+                <p class='number'>3</p>
+                <p class='operator'>*</p>         
+                <p class='number'>0</p>
+                <p class='dot'>.</p>
+                <p class='operator equals'>=</p>
+                <p class='operator'>/</p>
+           </div>
+      </div>           
+          
+            
+	<a class='mobile_menu'> </a>
 		<nav>
 			<div> 
 				<ul>
@@ -135,6 +112,10 @@
 				</div>
 			</footer>
 		</div>
-        <script src="js/claculator/calculator.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/calculator/calculator.js"></script>
+        <script>
+        	var c1 = new Calculator('#calculator');
+        </script>
     </body>
 </html>
