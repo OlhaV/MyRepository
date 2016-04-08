@@ -17,30 +17,38 @@
 				</div>
 			</header>
 			
-    <div id="calculator">
+    <div class="calculator">
         <div class='row1'>
-            <p class='clear'>C</p>
-            <div id='result'>  </div>
+            <p class='clear button'>C</p>
+            <div id='result'></div>
         </div>
         <div class='keys'>
-                <p class='number'>7</p>
-                <p class='number'>8</p>
-                <p class='number'>9</p>
-                <p class='operator'>+</p>   
-                <p class='number'>4</p>
-                <p class='number'>5</p>
-                <p class='number'>6</p>
-                <p class='operator'>-</p>  
-                <p class='number'>1</p>
-                <p class='number'>2</p>
-                <p class='number'>3</p>
-                <p class='operator'>*</p>         
-                <p class='number'>0</p>
-                <p class='dot'>.</p>
-                <p class='operator equals'>=</p>
-                <p class='operator'>/</p>
-           </div>
-      </div>           
+            <div class='row2'>
+                <p class='number button'>7</p>
+                <p class='number button'>8</p>
+                <p class='number button'>9</p>
+                <p class='operator button'>+</p>   
+            </div>
+            <div class='row3'>
+                <p class='number button'>4</p>
+                <p class='number button'>5</p>
+                <p class='number button'>6</p>
+                <p class='operator button'>-</p>  
+            </div>
+            <div class='row4'>            
+                <p class='number button'>1</p>
+                <p class='number button'>2</p>
+                <p class='number button'>3</p>
+                <p class='operator button'>*</p> 
+            </div>
+            <div class='row5'>             
+                <p class='number button'>0</p>
+                <p class='dot button'>.</p>
+                <p class='operator equals button'>=</p>
+                <p class='operator button'>/</p>
+            </div>
+        </div>
+    </div>            
           
             
 	<a class='mobile_menu'> </a>
@@ -112,10 +120,10 @@
 				</div>
 			</footer>
 		</div>
-        <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/calculator/calculator.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         <script>
-        	var c1 = new Calculator('#calculator');
+            var c1 = new Calculator('.calculator');
         </script>
     </body>
 </html>

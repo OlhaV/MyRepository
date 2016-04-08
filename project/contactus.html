@@ -5,13 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Creating a Responsive Web Design</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="css/contactus.css">
-		<script language="javascript" src='js/jquery-1.12.0.min.js' type='text/javascript'></script>
+		<script language="javascript" src="jquery-2.1.4.min.js" type='text/javascript'></script>
 		<script language="javascript" src="js/mobileMenu.js" type='text/javascript'></script>
 		<script src='js/contact_us/settings.js'></script>
 		<script src='js/contact_us/languages.js'></script>
 		<script src='js/contact_us/component.js'></script>
 		<script src='js/contact_us/form.js'></script>
-		<script src='js/contact_us/countdown.js'></script>
 		<script language="javascript" src='js/contact_us/contactus.js' type='text/javascript'></script>
 	</head>
 	<body>
@@ -34,11 +33,11 @@
 					
 					<div class='error_form_message'></div>
 					
-					<label class='label_first_name'>First Name</label> <input type="text" id='firstName' class='textfield' placeholder="Enter First Name"><br>
-					<label class='label_last_name'>Last Name</label> <input type="text" id='lastName' class='textfield' placeholder="Enter Last Name"><br>
-					<label class='email_label'>Email</label> <input type="text" class='textfield' id='email' placeholder="Enter Your Email"><br>
-					<label class='phone_label'>Phone</label> <input type="text" class='textfield' id='phone' placeholder="Enter Your Phone Number"><br>
-					<label class='contact_label'>How can we contact you?</label> <br>
+					<label class='label_first_name label_personal_info'>First Name</label> <input type="text" id='firstName' class='textfield input_personal_info' placeholder="Enter First Name"><br>
+					<label class='label_last_name label_personal_info'>Last Name</label> <input type="text" id='lastName' class='textfield input_personal_info' placeholder="Enter Last Name"><br>
+					<label class='email_label label_personal_info'>Email</label> <input type="text" class='textfield input_personal_info' id='email' placeholder="Enter Your Email"><br>
+					<label class='phone_label label_personal_info'>Phone</label> <input type="text" class='textfield input_personal_info' id='phone' placeholder="Enter Your Phone Number"><br>
+					<p class='contact_label'>How can we contact you?</p> <br>
 					<label class='by_phone_label'>By phone</label> <input type="radio" class='howToContact' name='1' value='phone'><br>
 					<label class='by_email_label'>By email</label> <input type="radio" class='howToContact' name='1' value='email'><br>
 					<label class='feedback_label'>Your Feedback</label> <textarea class='feedback textfield'></textarea><br>
@@ -48,7 +47,7 @@
 	</section>
 		
 		
-	<a class='mobile_menu'> </a>
+		<a class='mobile_menu'> </a>
 		<nav>
 			<div> 
 				<ul>
@@ -119,7 +118,6 @@
 	</body>
 		<script> 
 			var f1 = new Contact('#form');
-			var w1 = new Windoww('.countdownBtnSection');
 			var f1 = new formValidation('#form');
 		</script>
 	</html>
