@@ -298,10 +298,15 @@ section.atmosphere {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #fff;
+    margin: 0 auto;
 }
 
 section.atmosphere div#slider {
 	position: relative;
+}
+
+section.atmosphere div#slider img#img {
+    width: 100%;
 }
 
 section.atmosphere div#slider img#left {
@@ -462,11 +467,13 @@ footer a:hover {
 
 @media screen and (max-width: 1220px) {
 	
+/*
 	section.atmosphere div#slider img#img {
 		width: 100%; 
 		height: auto;
 	}
 }
+*/
 
 
 
@@ -913,10 +920,10 @@ footer a:hover {
 	/*Section - Atmosphere*/
 
 	section.atmosphere div.sliderBullets ul.controls li {
+		width: 15px;
+		height: 15px;
 		background: #fff;
 		font-size: 2em;
-		width: 20px;
-		height: 20px;
 		border-radius: 100%;
 		display: inline-block;
 		margin-right: 30px;
@@ -924,6 +931,10 @@ footer a:hover {
 	
 	section.atmosphere article p {
 		width: auto;
+	}
+    
+    section.atmosphere div#slider img#left, section.atmosphere div#slider img#right {
+		top: 30%;
 	}
 		
 	/*Section - How-To*/
