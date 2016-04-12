@@ -9,7 +9,7 @@ function Slider(sSelector) {
 	s.image = s.find('#img');
 	s.prev = s.find('#left');
 	s.next = s.find('#right');
-	s.bullets = s.find('.sliderBullet');
+	s.bullets = s.find('.sliderBullets>ul>li');
 	
 	
 	s.ticker = null;
@@ -34,7 +34,7 @@ function Slider(sSelector) {
         
 		
         s.bullets.removeClass('active');
-        s.bullets.eq(s.imageCount-1).addClass('active');
+        s.bullets.eq(s.imageCount-1).addClass('active')
 
 	}
     
