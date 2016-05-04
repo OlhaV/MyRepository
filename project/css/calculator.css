@@ -18,24 +18,25 @@ div#result, p {
     line-height: 32px;
 }
 
+
 div#result {
     background-color: #95cae5;
     width: 255px;
     margin: 7px;
     float: right;
+    text-align: right;
 }
 
-
-p.number, p.operator, p.clear, p.dot {
+p.number, p.operator, p.clear, p.dot, p.equals {
     text-align: center;
     margin: 7px;
 }
 
-p.number, p.operator, p.dot {
+p.number, p.operator, p.dot, p.equals {
     float: left;
 }
 
-p.operator {
+p.operator, p.equals {
     background-color: #95e5b0; 
 }
 
@@ -48,7 +49,7 @@ p.number:hover, p.dot:hover {
     background-color: #dab786; 
 }
 
-p.operator:hover {
+p.operator:hover, p.equals:hover {
     background-color: #58d682; 
 }
 
